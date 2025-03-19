@@ -192,11 +192,11 @@ See the [CHANGELOG.md](CHANGELOG.md) file for a detailed history of changes and 
 If you use this repository in your research or publications, please cite it using the information in our [CITATION.cff](CITATION.cff) file or with the following:
 
 ```
-NishDJ. (2024). Universal Categories: A comprehensive hierarchical taxonomy
+NishDJ. (2025). Universal Categories: A comprehensive hierarchical taxonomy
 of universal categories across disciplines and domains. GitHub.
 https://github.com/NishDJ/UNIVERSAL_CATEGORIES
 ```
 
 ---
 
-*Last updated: March 19, 2024*
+*Last updated: March 19, 2025*

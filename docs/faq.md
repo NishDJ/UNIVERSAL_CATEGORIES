@@ -72,7 +72,7 @@ Yes, the MIT License allows for commercial use. However, we appreciate attributi
 Please see our [CITATION.cff](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/blob/main/CITATION.cff) file for citation information, or use the following format:
 
 ```
-NishDJ. (2024). Universal Categories: A comprehensive hierarchical taxonomy
+NishDJ. (2025). Universal Categories: A comprehensive hierarchical taxonomy
 of universal categories across disciplines and domains. GitHub.
 https://github.com/NishDJ/UNIVERSAL_CATEGORIES
 ```
