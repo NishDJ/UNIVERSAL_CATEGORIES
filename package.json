@@ -9,6 +9,7 @@
     "serve:docs": "docsify serve ./docs",
     "validate": "node scripts/validate-categories.js",
     "generate:toc": "node scripts/generate-toc.js",
+    "verify:status": "node scripts/status-check-fix.js",
     "prepush": "npm run lint:md && npm run validate",
     "commit": "npx git-cz"
   },
