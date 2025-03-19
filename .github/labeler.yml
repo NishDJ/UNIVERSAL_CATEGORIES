@@ -1,0 +1,40 @@
+# This file configures the actions/labeler to automatically label PRs and issues
+# based on various matching rules in the title and body
+
+# Add 'documentation' label to any PR/issue that mentions docs in title or body
+documentation:
+  - '(?i)\bdoc(s|umentation)?\b'
+  - '(?i)readme'
+
+# Add 'enhancement' label to any PR/issue that mentions enhancement, feature, or new in title or body
+enhancement:
+  - '(?i)\benhancement\b'
+  - '(?i)\bfeature\b'
+  - '(?i)\bnew\b'
+
+# Add 'bug' label to any PR/issue that mentions bug, fix, or issue in title or body
+bug:
+  - '(?i)\bbug\b'
+  - '(?i)\bfix(es|ed)?\b'
+  - '(?i)\bissue\b'
+  - '(?i)\berror\b'
+
+# Add 'question' label to any PR/issue that includes a question
+question:
+  - '(?i)\bquestion\b'
+  - '(?i)\bhow\b'
+  - '\?'
+
+# Add 'help wanted' label to any PR/issue asking for help
+'help wanted':
+  - '(?i)\bhelp\b'
+  - '(?i)\bassistance\b'
+  - '(?i)need help'
+
+# Add 'good first issue' label to issues that mention simple or beginner
+'good first issue':
+  - '(?i)\bbeginner\b'
+  - '(?i)\beasy\b'
+  - '(?i)\bsimple\b'
+  - '(?i)good first'
+

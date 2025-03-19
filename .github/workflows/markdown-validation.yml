@@ -1,0 +1,54 @@
+name: Markdown Validation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+
+jobs:
+  validate-markdown:
+    name: Validate Markdown Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install -g markdownlint-cli
+          npm install -g markdown-link-check
+          npm install -g cspell
+
+      - name: Run markdownlint
+        run: markdownlint '**/*.md' --ignore node_modules
+
+      - name: Check for broken links
+        run: |
+          find . -name "*.md" -type f -exec markdown-link-check {} \;
+
+      - name: Check spelling
+        run: |
+          cspell lint "**/*.md" --no-progress
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Markdown Validation Results :memo:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- :white_check_mark: **Markdownlint**: Ensures consistent markdown style" >> $GITHUB_STEP_SUMMARY
+          echo "- :link: **Link Check**: Validates all links in markdown files" >> $GITHUB_STEP_SUMMARY
+          echo "- :abc: **Spell Check**: Identifies spelling errors in content" >> $GITHUB_STEP_SUMMARY
+

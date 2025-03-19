@@ -1,0 +1,67 @@
+{
+  "name": "universal-categories",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of universal categories across various domains",
+  "scripts": {
+    "lint:md": "markdownlint **/*.md --ignore node_modules",
+    "lint:fix": "markdownlint **/*.md --ignore node_modules --fix",
+    "build:docs": "docsify generate ./docs",
+    "serve:docs": "docsify serve ./docs",
+    "validate": "node scripts/validate-categories.js",
+    "generate:toc": "node scripts/generate-toc.js",
+    "prepush": "npm run lint:md && npm run validate",
+    "commit": "npx git-cz"
+  },
+  "keywords": [
+    "categories",
+    "taxonomy",
+    "classification",
+    "collection",
+    "universal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/universal-categories.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/universal-categories/issues"
+  },
+  "homepage": "https://github.com/yourusername/universal-categories#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "docsify-cli": "^4.4.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "markdownlint-cli": "^0.36.0",
+    "semantic-release": "^22.0.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.md": [
+      "markdownlint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+} 

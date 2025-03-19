@@ -1,0 +1,49 @@
+name: Validation Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate Categories
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Validate markdown files
+        run: npm run lint:md
+        
+      - name: Validate category structure
+        run: npm run validate
+        
+      - name: Generate TOC
+        run: npm run generate:toc
+        
+      - name: Check for changes in TOC
+        id: git-check
+        run: |
+          git diff --exit-code docs/categories-directory.md || echo "toc_changed=true" >> $GITHUB_OUTPUT
+        
+      - name: Commit TOC changes on main branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.git-check.outputs.toc_changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/categories-directory.md
+          git commit -m "docs: update categories directory TOC [skip ci]"
+          git push 

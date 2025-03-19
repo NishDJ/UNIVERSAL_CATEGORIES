@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository in your work, please cite it as below."
+title: "Universal Categories"
+abstract: "A comprehensive collection of universal categories across various domains of knowledge."
+version: 1.0.0
+date-released: 2024-03-19
+license: MIT
+repository-code: "https://github.com/yourusername/universal-categories"
+url: "https://yourusername.github.io/universal-categories"
+authors:
+  - given-names: 
+    family-names: 
+    affiliation: 
+keywords:
+  - categories
+  - taxonomy
+  - classification
+  - universal 

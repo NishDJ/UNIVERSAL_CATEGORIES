@@ -1,0 +1,55 @@
+title: "Category Discussion: [CATEGORY_NAME]"
+labels: ["discussion", "category"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Category Discussion
+        This template is for discussing existing categories, their organization, or proposing refinements.
+        
+        For new category proposals, please use the [New Category Issue Template](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/issues/new?template=new_category.md) instead.
+  
+  - type: input
+    id: category_name
+    attributes:
+      label: Category Name
+      description: Which category or categories are you discussing?
+      placeholder: "e.g., Philosophy, Music, Multiple Related Categories"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: discussion_points
+    attributes:
+      label: Discussion Points
+      description: What aspects of the category would you like to discuss?
+      placeholder: "Share your thoughts, questions, or suggestions about the organization, naming, hierarchy, or other aspects of this category."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed_changes
+    attributes:
+      label: Proposed Changes (if any)
+      description: Do you have specific changes in mind?
+      placeholder: "Describe any specific changes you're proposing to the category structure, naming, or organization."
+    validations:
+      required: false
+      
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why do you think this discussion is important?
+      placeholder: "Explain why this discussion matters for the UNIVERSAL_CATEGORIES project."
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this discussion, you agree to follow our community guidelines
+      options:
+        - label: I agree to be respectful and constructive in this discussion
+          required: true 

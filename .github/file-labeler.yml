@@ -1,0 +1,38 @@
+# This file configures the actions/labeler to automatically label PRs based on file paths
+
+# Add 'documentation' label to any change to markdown files
+documentation:
+  - '**/*.md'
+  - '**/*.txt'
+
+# Add 'category-update' label to any change within the Categories directory
+'category-update':
+  - 'Categories/**/*'
+
+# Add 'configuration' label to any change to configuration files
+configuration:
+  - '.github/**/*'
+  - '*.yml'
+  - '*.yaml'
+  - '*.json'
+  - '.gitignore'
+
+# More specific category labels based on which categories are modified
+'category:elements':
+  - 'Categories/Elements/**/*'
+
+'category:architecture':
+  - 'Categories/Architecture/**/*'
+
+'category:art':
+  - 'Categories/Art/**/*'
+
+'category:biology':
+  - 'Categories/Biology/**/*'
+
+'category:celestial':
+  - 'Categories/Celestial/**/*'
+
+'category:cuisine':
+  - 'Categories/Cuisine/**/*'
+

@@ -1,0 +1,40 @@
+# This file configures github/issue-labeler to automatically label issues based on content
+
+# Add 'bug' label to issues with Bug Report template
+bug:
+  - "### Description of the bug"
+  - "### Steps to Reproduce"
+
+# Add 'enhancement' label to issues with Feature Request template
+enhancement:
+  - "### Problem Statement"
+  - "### Proposed Solution"
+
+# Add 'category-proposal' label to issues with New Category template
+'category-proposal':
+  - "### Category Name"
+  - "### Category Description"
+
+# Add 'question' label to issues asking questions
+question:
+  - '\?'
+  - "I'm wondering"
+  - "How do I"
+  - "Is it possible"
+
+# Add priority labels based on keywords
+'priority:high':
+  - 'urgent'
+  - 'critical'
+  - 'emergency'
+  - 'asap'
+
+'priority:medium':
+  - 'important'
+  - 'significant'
+
+'priority:low':
+  - 'minor'
+  - 'trivial'
+  - 'when possible'
+

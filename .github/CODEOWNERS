@@ -1,0 +1,16 @@
+# This is a CODEOWNERS file to designate ownership of different parts of the codebase
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# These owners will be the default owners for everything in the repo
+* @NishDJ
+
+# Category specific owners can be added below as the project expands
+# For example:
+# /Categories/Biology/ @biology-expert
+# /Categories/Music/ @music-expert
+
+# GitHub specific files
+/.github/ @NishDJ
+README.md @NishDJ
+CONTRIBUTING.md @NishDJ
+SECURITY.md @NishDJ 

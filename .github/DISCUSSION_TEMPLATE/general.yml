@@ -1,0 +1,54 @@
+title: "[General Discussion]"
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # General Discussion
+        This template is for general discussions related to the UNIVERSAL_CATEGORIES project.
+        
+        For category-specific discussions, please use the Category Discussion template.
+        For feature requests or bug reports, please use the corresponding issue templates.
+  
+  - type: textarea
+    id: discussion_topic
+    attributes:
+      label: Discussion Topic
+      description: What would you like to discuss with the community?
+      placeholder: "Share your thoughts, questions, or ideas related to the UNIVERSAL_CATEGORIES project."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: discussion_type
+    attributes:
+      label: Discussion Type
+      description: What type of discussion is this?
+      options:
+        - Question
+        - Idea
+        - Use Case
+        - Project Direction
+        - Best Practices
+        - Collaboration Opportunity
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any additional information that would help frame the discussion?
+      placeholder: "Provide any background information that would help others understand the context of your discussion."
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this discussion, you agree to follow our community guidelines
+      options:
+        - label: I agree to be respectful and constructive in this discussion
+          required: true 

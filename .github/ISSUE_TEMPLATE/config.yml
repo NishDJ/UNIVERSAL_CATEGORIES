@@ -1,0 +1,15 @@
+blank_issues_enabled: true  # Allow users to open blank issues
+contact_links:
+  - name: GitHub Community Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here.
+  - name: GitHub Security Bug Bounty
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities here.
+  - name: Repository Discussions
+    url: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/discussions
+    about: Ask questions and discuss the project.
+  - name: Email the Maintainer
+    url: mailto:nishant@example.com
+    about: Contact the maintainer directly for private inquiries.
+
