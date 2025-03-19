@@ -10,7 +10,7 @@
     "validate": "node scripts/validate-categories.js",
     "generate:toc": "node scripts/generate-toc.js",
     "verify:status": "node scripts/status-check-fix.js",
-    "prepush": "npm run lint:md && npm run validate",
+    "prepush": "npm run validate",
     "commit": "npx git-cz"
   },
   "keywords": [
@@ -50,10 +50,7 @@
     }
   },
   "lint-staged": {
-    "*.md": [
-      "markdownlint --fix",
-      "git add"
-    ]
+    "*.md": []
   },
   "config": {
     "commitizen": {

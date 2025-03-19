@@ -14,7 +14,7 @@ This guide covers how to set up your local environment for contributing to the U
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/universal-categories.git
+   git clone https://github.com/NishDJ/UNIVERSAL_CATEGORIES.git
    cd universal-categories
    ```
 
