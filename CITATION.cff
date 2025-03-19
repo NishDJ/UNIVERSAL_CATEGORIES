@@ -5,12 +5,12 @@ abstract: "A comprehensive collection of universal categories across various dom
 version: 1.0.0
 date-released: 2024-03-19
 license: MIT
-repository-code: "https://github.com/yourusername/universal-categories"
-url: "https://yourusername.github.io/universal-categories"
+repository-code: "https://github.com/NishDJ/UNIVERSAL_CATEGORIES"
+url: "https://NishDJ.github.io/UNIVERSAL_CATEGORIES"
 authors:
-  - given-names: 
-    family-names: 
-    affiliation: 
+  - given-names: Nish
+    family-names: DJ
+    affiliation: NishDJ
 keywords:
   - categories
   - taxonomy

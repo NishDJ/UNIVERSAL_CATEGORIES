@@ -74,12 +74,12 @@ async function generateTocForDirectory(dir, level = 0) {
     const relativePath = path.relative(CATEGORIES_DIR, item.path).replace(/\\/g, '/');
     
     if (item.isDirectory) {
-      toc += `${indent}- [${item.name}](https://github.com/yourusername/universal-categories/tree/main/Categories/${relativePath})\n`;
+      toc += `${indent}- [${item.name}](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/tree/main/Categories/${relativePath})\n`;
       const subToc = await generateTocForDirectory(item.path, level + 1);
       toc += subToc;
     } else if (item.path.endsWith('.md')) {
       const title = await extractTitle(item.path);
-      toc += `${indent}- [${title}](https://github.com/yourusername/universal-categories/blob/main/Categories/${relativePath})\n`;
+      toc += `${indent}- [${title}](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/blob/main/Categories/${relativePath})\n`;
     }
   }
   
