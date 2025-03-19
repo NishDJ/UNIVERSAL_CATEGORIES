@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-03-19
+
 ### Added
 - Repository GitHub automation and quality improvements
 - Dependabot integration for automatic dependency updates
@@ -40,5 +42,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive README with badges and detailed information
 - MIT License
 
-[Unreleased]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/releases/tag/v0.1.0 
