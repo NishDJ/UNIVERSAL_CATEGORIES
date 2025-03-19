@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-03-19
+
 ### Added
 - Repository GitHub automation and quality improvements
 - Dependabot integration for automatic dependency updates
@@ -22,6 +24,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pre-commit hooks for code quality
 - Academic citation file (CITATION.cff)
 
+### Fixed
+- Status check workflows now include continue-on-error flag for better reliability
+- Repository badge URLs updated to use correct repository path
+- Package-lock.json synchronized with package.json to fix CI workflow failures
+- Removed markdown linting from pre-commit hooks to prevent validation errors
+
+### Changed
+- Updated multiple GitHub Actions dependencies via Dependabot
+- Upgraded markdownlint-cli from 0.36.0 to 0.44.0
+
 ## [0.1.0] - 2025-03-19
 
 ### Added
@@ -35,5 +47,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive README with badges and detailed information
 - MIT License
 
-[Unreleased]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/NishDJ/UNIVERSAL_CATEGORIES/releases/tag/v0.1.0 
