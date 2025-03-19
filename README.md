@@ -132,6 +132,19 @@ npm install
 npm run serve:docs
 ```
 
+## Development Workflow
+
+This repository follows GitHub Flow for development:
+
+1. **Create a branch**: Branch from `main` for each new feature or fix
+2. **Make changes**: Implement your changes in the branch
+3. **Follow standards**: Adhere to our code style and commit message conventions
+4. **Create a pull request**: Submit a PR with a clear description of changes
+5. **Review process**: Changes are reviewed before merging
+6. **Merge to main**: After approval, changes are merged to the main branch
+
+This workflow ensures code quality and maintains the repository's high standards.
+
 ## Usage
 
 This universal categorization system can be used for:
