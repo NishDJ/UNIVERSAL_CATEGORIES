@@ -36,7 +36,7 @@ jobs:
 
       # Label based on matched patterns in title and body
       - name: Label based on title and body
-        uses: actions/labeler@v4
+        uses: actions/labeler@v5
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           configuration-path: .github/labeler.yml
@@ -45,7 +45,7 @@ jobs:
       # Automatically label PRs based on file paths changes
       - name: Label based on changed files
         if: github.event_name == 'pull_request_target'
-        uses: actions/labeler@v4
+        uses: actions/labeler@v5
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           configuration-path: .github/file-labeler.yml
