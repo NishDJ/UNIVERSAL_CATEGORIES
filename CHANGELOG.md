@@ -17,6 +17,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Discussion templates
 - Category template for consistent category structures
 
+### Fixed
+- Status check workflows now include continue-on-error flag for better reliability
+- Repository badge URLs updated to use correct repository path
+- Package-lock.json synchronized with package.json to fix CI workflow failures
+- Removed markdown linting from pre-commit hooks to prevent validation errors
+
+### Changed
+- Updated multiple GitHub Actions dependencies via Dependabot
+- Upgraded markdownlint-cli from 0.36.0 to 0.44.0
+
 ## [0.1.0] - 2025-03-19
 
 ### Added
