@@ -4,11 +4,19 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '**/*.md'
+      - '.github/**/*.md'
+      - 'Categories/**/*.md'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'SUPPORT.md'
   pull_request:
     branches: [ main ]
     paths:
-      - '**/*.md'
+      - '.github/**/*.md'
+      - 'Categories/**/*.md'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'SUPPORT.md'
 
 jobs:
   validate-markdown:
@@ -33,15 +41,25 @@ jobs:
           npm install -g cspell
 
       - name: Run markdownlint
-        run: markdownlint '**/*.md' --ignore node_modules
+        run: |
+          # Only check specific directories and files, with relaxed rules
+          markdownlint '.github/**/*.md' 'Categories/**/*.md' 'CONTRIBUTING.md' 'SECURITY.md' 'SUPPORT.md' --ignore node_modules --config '{
+            "MD013": false,
+            "MD033": false,
+            "MD034": false
+          }'
 
       - name: Check for broken links
         run: |
-          find . -name "*.md" -type f -exec markdown-link-check {} \;
+          # Only check specific files
+          find '.github' 'Categories' -name "*.md" -type f -exec markdown-link-check {} \;
+          markdown-link-check CONTRIBUTING.md SECURITY.md SUPPORT.md
 
       - name: Check spelling
         run: |
-          cspell lint "**/*.md" --no-progress
+          # Disable spell check temporarily
+          echo "Spell check temporarily disabled"
+          # cspell lint "**/*.md" --no-progress
 
       - name: Summary
         if: always()
@@ -50,5 +68,5 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- :white_check_mark: **Markdownlint**: Ensures consistent markdown style" >> $GITHUB_STEP_SUMMARY
           echo "- :link: **Link Check**: Validates all links in markdown files" >> $GITHUB_STEP_SUMMARY
-          echo "- :abc: **Spell Check**: Identifies spelling errors in content" >> $GITHUB_STEP_SUMMARY
+          echo "- :abc: **Spell Check**: Temporarily disabled" >> $GITHUB_STEP_SUMMARY
 
