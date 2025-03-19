@@ -30,7 +30,7 @@ You can navigate the categories in several ways:
 3. **Clone Locally**: Clone the repository to your local machine for offline access.
 
 ```bash
-git clone https://github.com/yourusername/universal-categories.git
+git clone https://github.com/NishDJ/UNIVERSAL_CATEGORIES.git
 cd universal-categories
 ```
 

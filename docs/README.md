@@ -1,10 +1,10 @@
 # Universal Categories
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/universal-categories.svg?style=social&label=Star&maxAge=2592000)](https://github.com/yourusername/universal-categories/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/NishDJ/UNIVERSAL_CATEGORIES.svg?style=social&label=Star&maxAge=2592000)](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/universal-categories.svg)](https://github.com/yourusername/universal-categories/issues)
-[![Markdown Validate](https://github.com/yourusername/universal-categories/actions/workflows/markdown-validation.yml/badge.svg)](https://github.com/yourusername/universal-categories/actions/workflows/markdown-validation.yml)
-[![Semantic Release](https://github.com/yourusername/universal-categories/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/yourusername/universal-categories/actions/workflows/semantic-release.yml)
+[![GitHub issues](https://img.shields.io/github/issues/NishDJ/UNIVERSAL_CATEGORIES.svg)](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/issues)
+[![Markdown Validate](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/actions/workflows/markdown-validation.yml/badge.svg)](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/actions/workflows/markdown-validation.yml)
+[![Semantic Release](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/actions/workflows/semantic-release.yml)
 
 > A comprehensive collection of universal categories across various domains of knowledge.
 
@@ -61,4 +61,4 @@ We welcome contributions from everyone! Please read our [Contributing Guidelines
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/yourusername/universal-categories/blob/main/LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/NishDJ/UNIVERSAL_CATEGORIES/blob/main/LICENSE) file for details. 
